@@ -1,0 +1,8 @@
+.head{
+  background-color: #6a5f96;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center ;
+  margin: 5px;
+}
