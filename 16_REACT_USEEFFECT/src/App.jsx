@@ -17,7 +17,7 @@ const App = () => {
     console.log('use effect is running ')
   }, [num])
 
-  return (
+  return ( 
     <div>
       <h1>{num}</h1>
       <h1>{num2}</h1>
