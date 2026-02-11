@@ -1,41 +1,41 @@
 import React from 'react'
 import axios from 'axios'
 import {useState , useEffect} from 'react'
+import Images from './Components/Images'
+import Button from './Components/Button'
 const App = () => {
    const [img, setImg] = useState([])
+   const [index, setIndex] = useState(1) //
   
   const getData = async()=>{
-    const response = await axios.get('https://picsum.photos/v2/list?page=2&limit=60')
+    const response = await axios.get(`https://picsum.photos/v2/list?page=${index}&limit=60`)
     setImg(response.data);
 
   }
 
   useEffect(() => {
     getData()
-    
-  }, [])
+  }, [index])
   
 
-  let printUserData = 'No user available';
+  let printUserData = <h3 className='text-gray-400 text-xs absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-semibold' >Loading...</h3>;
 
   if(img.length > 0){
     printUserData = img.map((item) => {
 
-      return <a href={item.url} target='_blank'>
-        <div>
-        <div className='h-40 w-44 overflow-hidden bg-white rounded-xl'>
-        <img className='h-full w-full object-cover' src={item.download_url} alt="" />
+      return <div key={item.id}>
+        <Images item = {item}/>
       </div>
-      <h2>{item.author}</h2>
-      </div>
-      </a>
     })
   }
   return (
     <div className='bg-black overflow-auto h-screen p-4 text-white '>
+      <h1 className='fixed text-6xl bg-amber-500'>{index}</h1>
       <div className='flex flex-wrap gap-4'>
         {printUserData}
       </div>
+
+     <Button index={index} setIndex={setIndex} setImg={setImg} />
     </div>
   )
 }
