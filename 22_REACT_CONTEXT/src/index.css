@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+html,body{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background-color: rgb(67, 63, 63);
+  gap: 20px;
+  padding: 20px 40px;
+}
+.nav2{
+  display: flex;
+  
+  gap: 20px;
+}
