@@ -1,0 +1,58 @@
+const places = [
+  {
+    id: 1,
+    name: "Rosa Khutor",
+    location: "Russia",
+    image: "https://images.unsplash.com/photo-1549887534-1541e9326642?q=80&w=800",
+    rating: 4.8,
+    distance: "1250km",
+    mood: "Adventurous",
+  },
+  {
+    id: 2,
+    name: "Sheregesh",
+    location: "Russia",
+    image: "https://images.unsplash.com/photo-1605540436563-5bca919ae766?q=80&w=800",
+    rating: 4.9,
+    distance: "3400km",
+    mood: "Chill",
+  },
+  {
+    id: 3,
+    name: "Tetnuldi",
+    location: "Georgia",
+    image: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=800",
+    rating: 4.7,
+    distance: "1800km",
+    mood: "Scenic",
+  },
+  {
+    id: 4,
+    name: "Gudauri",
+    location: "Georgia",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=800",
+    rating: 4.6,
+    distance: "1750km",
+    mood: "Exciting",
+  },
+  {
+    id: 5,
+    name: "Dombay",
+    location: "Russia",
+    image: "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?q=80&w=800",
+    rating: 4.8,
+    distance: "1400km",
+    mood: "Majestic",
+  },
+  {
+    id: 6,
+    name: "Arkhyz",
+    location: "Russia",
+    image: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=800",
+    rating: 4.7,
+    distance: "1350km",
+    mood: "Peaceful",
+  },
+];
+
+export default places;
